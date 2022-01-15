@@ -82,6 +82,12 @@ span{
 .header a:hover{
     border-bottom: 2px solid var(--primary-color)
 }
+input[type="checkbox"]{
+    display: none;
+}
+#hamburger{
+    display: none;
+}
 #hamburger, #hamburger-icon{
     display: none; 
 }
