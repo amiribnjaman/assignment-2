@@ -231,6 +231,9 @@ span{
     width: 100%;
     height: 1px;
 }
+.company-logos ul li a img{
+    max-width: 90%; 
+}
 
 /*-----------------Company Responsive-----------------*/
 /* tablet */
@@ -245,6 +248,9 @@ span{
     .company-logos ul li{
         padding: 5px 15px;
         text-align: center;
+    }
+    .company-logos ul li a img{
+        max-width: 80%; 
     }
 }
 /* mobile */
@@ -395,7 +401,7 @@ span{
     }
 }
 
-@media (min-width: 340px) and (max-width: 601px){
+@media (min-width: 320px) and (max-width: 601px){
     .clients{
         grid-template-columns: repeat(1, 1fr);
         margin-bottom: 50px;
