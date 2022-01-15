@@ -200,7 +200,7 @@ span{
 /*-----------------Company Responsive-----------------*/
 @media (min-width: 320px) and (max-width:640px){
     .company{
-        margin-top: 80px;
+        margin-top: 115px;
     }
     .company-logos ul{
         grid-template-columns: repeat(3, 1fr);
@@ -233,7 +233,6 @@ span{
 }
 .products h5{
     font-size: 18px;
-    margin-bottom: 10px;
 }
 .products p{
     font-size: 14px;
@@ -248,7 +247,7 @@ span{
 }
 .product-card {
     width: 300px;
-    height: 420px;
+    height: 440px;
     box-shadow: 0 0 3px 0px #c9c5c5;
     border-radius: 10px;
     margin: 20px auto;
@@ -258,4 +257,22 @@ span{
 }
 .product-card img, .product-card .product-content{
     padding: 12px;
+}
+.product-card ul{
+    display: flex;
+}
+.product-card ul i{
+    color: #FB8200;
+    font-size: 13px;
+}
+.product-card ul li:last-child{
+    margin-left: 8px;
+}
+
+/*----------------Product Responsive------------------*/
+@media (min-width: 320px) and (max-width:640px){
+    .product-boxes {
+        margin: 0;
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
