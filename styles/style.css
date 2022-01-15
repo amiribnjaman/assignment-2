@@ -97,10 +97,6 @@ input[type="checkbox"]{
     .header{
         margin-bottom: 100px;
     }
-    h1{
-        margin-top: 40px;
-        font-size: 30px;
-    }
     #hamburger-icon{
         display: block;
         margin-top: 4px;
@@ -168,6 +164,7 @@ input[type="checkbox"]{
         flex-direction: column-reverse;
     }
     .banner-content h1{
+        margin-top: 30px;
         font-size: 30px;
     }
     .banner-content{
@@ -196,6 +193,7 @@ input[type="checkbox"]{
         max-width: 100%;
     }
     .banner-content h1{
+        margin-top: 30px;
         font-size: 25px;
     }
     .banner-content p {
