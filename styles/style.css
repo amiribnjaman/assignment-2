@@ -269,10 +269,23 @@ span{
     margin-left: 8px;
 }
 
+.products .see-more {
+    text-align: right;
+    margin-top: 5%;
+    margin-right: 7%;
+}
+.products .see-more a{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
 /*----------------Product Responsive------------------*/
 @media (min-width: 320px) and (max-width:640px){
     .product-boxes {
         margin: 0;
         grid-template-columns: repeat(1, 1fr);
+    }
+    .products h2 {
+        margin-bottom: 20px;
     }
 }
