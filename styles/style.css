@@ -87,12 +87,9 @@ span{
 #humberger, #humberger-icon{
     display: none; 
 }
-
 /*---------Header Responsive----------*/
-@media (min-width: 320px) and (max-width:640px){
-    /* .header ul li{
-        display: none;
-    } */
+/*  tablet  */
+@media (max-width:1000px){
     h1{
         margin-top: 40px;
         font-size: 30px;
@@ -104,14 +101,14 @@ span{
         flex-direction: column;
         position: absolute;
         top: 0;
-        right: 600px;
+        right: 100%;
         transition: 1s;
     }
     .nav-menu ul li{
         padding: 10px;
     }
     input[type="checkbox"]:checked ~ .nav-menu ul{
-        left: 7px;
+        left: 2%;
         width: 300px;
         top: 100px;
     }
@@ -122,15 +119,26 @@ span{
 --------------------------------------*/
 .banner{
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* min-height: calc(100vh - 100px); */
 }
 .banner-content p{
     width: 70%;
     color: #3A3A3A;
     margin: 10px 0;
     font-weight: 500;
+}
+
+.banner-content a:hover{
+    animation: button 1s ease-in-out infinite;
+}
+
+@keyframes button {
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1)
+    }
 }
 .banner-img{
     width: 450px;
@@ -143,9 +151,34 @@ span{
     width: 100%;
     height: 100%;
 }
-
 /*----------Banner Responsive-----------*/
-@media (min-width: 320px) and (max-width:640px){
+/* tablet */
+@media (max-width:1000px){
+    .banner{
+        text-align: center;
+        margin: auto;
+        flex-direction: column-reverse;
+    }
+    .banner-content h1{
+        font-size: 35px;
+    }
+    .banner-content{
+        max-width: 100%;
+    }
+    .banner-content p {
+        width: 100%;
+        font-size: 15px;
+    }
+    .banner-img{
+        width: 350px;
+        height: 350px;
+    }
+    .banner-img img{
+        width: 100%
+    }
+}
+/* mobile */
+@media (min-width: 320px) and (max-width:600px){
     .banner{
         text-align: center;
         margin: auto;
@@ -165,6 +198,7 @@ span{
         width: 100%
     }
 }
+
 
 /*---------------------------------
         Company Style
@@ -198,7 +232,22 @@ span{
 }
 
 /*-----------------Company Responsive-----------------*/
-@media (min-width: 320px) and (max-width:640px){
+/* tablet */
+@media (max-width:1000px){
+    .company{
+        margin-top: 115px;
+    }
+    .company-logos ul {
+        margin: auto;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .company-logos ul li{
+        padding: 5px 15px;
+        text-align: center;
+    }
+}
+/* mobile */
+@media (min-width: 320px) and (max-width:600px){
     .company{
         margin-top: 115px;
     }
@@ -215,6 +264,7 @@ span{
         text-align: center;
     }
 }
+
 
 /*--------------------------------
         Products Style
@@ -247,7 +297,7 @@ span{
 }
 .product-card {
     width: 300px;
-    height: 440px;
+    height: 450px;
     box-shadow: 0 0 3px 0px #c9c5c5;
     border-radius: 10px;
     margin: 20px auto;
@@ -260,13 +310,16 @@ span{
 }
 .product-card ul{
     display: flex;
+    margin: 7px 0;
 }
 .product-card ul i{
     color: #FB8200;
-    font-size: 13px;
+    font-size: 12px;
 }
 .product-card ul li:last-child{
     margin-left: 8px;
+    font-size: 14px;
+    margin-top: 3px;
 }
 
 .products .see-more {
@@ -280,7 +333,7 @@ span{
 }
 
 /*----------------Product Responsive------------------*/
-@media (min-width: 320px) and (max-width:640px){
+@media (min-width: 320px) and (max-width:600px){
     .product-boxes {
         margin: 0;
         grid-template-columns: repeat(1, 1fr);
@@ -288,4 +341,43 @@ span{
     .products h2 {
         margin-bottom: 20px;
     }
+}
+
+/* tablet respnosive */
+@media (min-width: 601px) and (max-width:1000px){
+    .product-boxes {
+        margin: 0;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/*----------------------------------
+            Footer Style
+------------------------------------*/
+footer{
+    width: 100%;
+    height: 200px;
+    background: #0A0826;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+footer p{
+    font-size: 14px;
+    color: #D9DBE1;
+}
+footer ul{
+    display: flex;
+}
+footer ul li i{
+    color: #D9DBE1;
+    margin-top: 10px;
+    padding: 10px
 }
