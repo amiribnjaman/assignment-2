@@ -97,6 +97,7 @@ span{
     }
     #humberger-icon{
         display: block;
+        margin-top: 4px;
     }
     .nav-menu ul{
         flex-direction: column;
