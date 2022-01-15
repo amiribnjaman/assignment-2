@@ -76,13 +76,13 @@ span{
     font-size: 16px;
     position: relative;
 }
-.humberger-icon{
+.hamburger-icon{
     display: none;
 }
 .header a:hover{
     border-bottom: 2px solid var(--primary-color)
 }
-#humberger, #humberger-icon{
+#hamburger, #hamburger-icon{
     display: none; 
 }
 /*---------Header Responsive----------*/
@@ -95,7 +95,7 @@ span{
         margin-top: 40px;
         font-size: 30px;
     }
-    #humberger-icon{
+    #hamburger-icon{
         display: block;
         margin-top: 4px;
     }
