@@ -354,6 +354,10 @@ input[type="checkbox"]{
 
 /*----------------Product Responsive------------------*/
 @media (min-width: 320px) and (max-width:600px){
+    .product-card {
+        width: 90%;
+        height: 95%;
+    }
     .product-boxes {
         margin: 0;
         grid-template-columns: repeat(1, 1fr);
@@ -423,8 +427,10 @@ input[type="checkbox"]{
         margin-bottom: 50px;
     }
     .client-box{
+        width: 90%;
         margin: 20px auto;
     }
+    
 }
 
 /*----------------------------------
