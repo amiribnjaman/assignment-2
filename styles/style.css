@@ -119,6 +119,12 @@ input[type="checkbox"]{
         top: 100px;
     }
 }
+/* mobile */
+@media (min-width: 320px) and (max-width:600px){
+    .header.mt-50{
+        margin-top: 35px;
+    }
+}
 
 /*-------------------------------------
             Banner Styles
