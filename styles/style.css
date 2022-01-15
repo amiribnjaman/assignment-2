@@ -394,8 +394,9 @@ input[type="checkbox"]{
 }
 .clients{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 300px 300px 300px;
     justify-content: center;
+    gap: 35px
 }
 .client-box{
     text-align: center;
@@ -410,13 +411,14 @@ input[type="checkbox"]{
 /*------------Clients Style------------*/
 @media (max-width:1000px){
     .clients{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 300px 300px;
+        gap: 10px;
     }
 }
 
 @media (min-width: 320px) and (max-width: 601px){
     .clients{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: 300px;
         margin-bottom: 50px;
     }
     .client-box{
