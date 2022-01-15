@@ -91,6 +91,9 @@ input[type="checkbox"]{
 #hamburger, #hamburger-icon{
     display: none; 
 }
+.cart{
+    margin-top: 4px;
+}
 /*---------Header Responsive----------*/
 /*  tablet  */
 @media (max-width:1000px){
