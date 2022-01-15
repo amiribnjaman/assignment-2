@@ -195,6 +195,9 @@ input[type="checkbox"]{
     .banner-content{
         max-width: 100%;
     }
+    .banner-content h1{
+        font-size: 25px;
+    }
     .banner-content p {
         width: 100%;
     }
