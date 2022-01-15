@@ -64,7 +64,6 @@ span{
 /*----------------------------------
             Header Style
 -----------------------------------*/
-
 .header h2{
     font-family: var(--secondary-font);
 }
@@ -91,9 +90,6 @@ input[type="checkbox"]{
 #hamburger, #hamburger-icon{
     display: none; 
 }
-.cart{
-    margin-top: 4px;
-}
 /*---------Header Responsive----------*/
 /*  tablet  */
 @media (max-width:1000px){
@@ -102,6 +98,9 @@ input[type="checkbox"]{
     }
     #hamburger-icon{
         display: block;
+        margin-top: 4px;
+    }
+    .cart{
         margin-top: 4px;
     }
     .nav-menu ul{
@@ -134,7 +133,6 @@ input[type="checkbox"]{
     margin: 10px 0;
     font-weight: 500;
 }
-
 .banner-content a:hover{
     animation: button 1s ease-in-out infinite;
 }
@@ -211,7 +209,6 @@ input[type="checkbox"]{
     }
 }
 
-
 /*---------------------------------
         Company Style
 ----------------------------------*/
@@ -283,7 +280,6 @@ input[type="checkbox"]{
     }
 }
 
-
 /*--------------------------------
         Products Style
 ---------------------------------*/
@@ -339,7 +335,6 @@ input[type="checkbox"]{
     font-size: 14px;
     margin-top: 3px;
 }
-
 .products .see-more {
     text-align: right;
     margin-top: 5%;
@@ -421,7 +416,6 @@ input[type="checkbox"]{
         margin: 20px auto;
     }
 }
-
 
 /*----------------------------------
             Footer Style
