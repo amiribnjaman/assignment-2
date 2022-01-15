@@ -165,3 +165,77 @@ span{
         width: 100%
     }
 }
+
+/*---------------------------------
+        Company Style
+----------------------------------*/
+.company-logos ul{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-around;
+    margin: 100px;
+    position: relative;
+}
+.company-logos ul::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: -35px;
+    left: 0;
+    background-image: radial-gradient(#c4c2c2, rgba(250, 249, 249, 0.212));
+    width: 100%;
+    height: 1px;
+}
+.company-logos ul::after{
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    background-image: radial-gradient(#c4c2c2, rgba(250, 249, 249, 0.212));
+    width: 100%;
+    height: 1px;
+}
+
+/*-----------------Company Responsive-----------------*/
+@media (min-width: 320px) and (max-width:640px){
+    .company{
+        margin-top: 80px;
+    }
+    .company-logos ul{
+        grid-template-columns: repeat(3, 1fr);
+        text-align: center;
+        margin: auto;
+        justify-content: center;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    .company-logos ul li{
+        padding: 5px 15px;
+        text-align: center;
+    }
+}
+
+/*--------------------------------
+        Products Style
+---------------------------------*/
+.products {
+    margin-top: 140px;
+    margin-bottom: 50px;
+}
+.products h2{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.product-single-box{
+    width: 329px;
+    height: 476px;
+    margin-top: 50px;
+    box-shadow: 0 0 5px #000;
+}
+.product-box{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+}
